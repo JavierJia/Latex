@@ -5,14 +5,19 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+%\usepackage{setspace}
+%\singlespacing
+%\onehalfspacing
+\usepackage{fullpage}
+\usepackage[top=1in, bottom=1in, left=0.8in, right=1in]{geometry}
 
 \begin{document} 
 
 \name{Jia Jianfeng\\[12pt]}     % the \\[12pt] adds a blank
 				        % line after name      
 
-\address{\bf  ADDRESS\\Donald Bren Hall, Room 3019\\University of California,Irvine\\Irvine,CA 92967}
-\address{\bf  CONTACT\\jianfeng.jia@gmail.com\\jianfeng.jia@uci.edu\\(949) 678-9893}
+%\address{\bf  ADDRESS\\Donald Bren Hall, Room 3019\\University of California,Irvine\\Irvine,CA 92967}
+\address{jianfeng.jia@gmail.com (949) 678-9893}
                                   
 \begin{resume}
 
@@ -22,12 +27,12 @@
 \section{EXPERIENCE}
    \vspace{-0.1in}	
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Associate Researcher} \>Sogou.com     \>Jul.2008- Jul.2012\\
                              \>Beijing, China
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
    Working at \emph{Chinese Input Method Editor} (IME) Research Group,
-    responsible for improving the precision of IME product using Natural Language Processing approaches based on terabyte data-set. \\
+    responsible for improving the precision of IME product using Natural Language Processing approaches based on terabyte dataset. 
 
 \section{EDUCATION}          
 %    Ph.D. student of Computer Science, University of California,Irvine,from Sept.2012\\        
@@ -36,19 +41,21 @@
 %    B.S. Computer Science, Xiamen University, Xiamen,China, July 2005\\       
    \vspace{-0.1in}	
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+  \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Ph.D student,Computer Science} \>  University of California,Irvine \>Sept.2012 - Present\\
                              \>Irvine, CA
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Research interest:\emph{ Parallel Database, Data Mining, Paralleling solution for Natural Language Processing}
+   Research interest:\emph{ Parallel Computing, Data Mining,Natural Language Processing}
+   \vspace{-0.1in}	
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf M.S. Computer Science} \>Xiamen University     \>Sept.2005 - Jul.2008\\
                              \>Xiamen,China
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Thesis:\emph{The Application of Dependency Grammar in Chinese-to-English Statistical Machine Translation}
+    Thesis:\emph{The Application of Dependency Grammar in Statistical Machine Translation}
+   \vspace{-0.1in}	
    \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf B.S. Computer Science} \>Xiamen University     \>Seps.2001 - Jul.2005\\
                              \>Xiamen,China
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
@@ -57,6 +64,47 @@
     Programming skills: C++,Python,Java;\\
     Rich experiences on large scale data processing using Hadoop/Hbase/Pig.
  
+\section{PROJECTS}
+   \vspace{-0.1in}	
+   \begin{tabbing}
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
+    {\bf Feedback Data flow System of IME using HBase and Pig}\> \>Sogou.com     \\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Building the automatic feedback data processing system on top of HBase. Using Pig to analyze the global user behavior and also keeping track of single user's daily precision. 
+%   Through this analyse tool, we found some certain flaw of the product and provided the solution to improve the precision.
+   \begin{tabbing}
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
+    {\bf Large-scale Language Model for Cloud IME} \> \>Sogou.com     \\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+%   Building the automatic process of LM updating weekly from the new corpus using Hadoop platform. \\
+   Building the decoder for trigram LM and the re-rank model to improve the precision of 1\%, which is 3\% higher than competitors' products.
+   \begin{tabbing}
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
+    {\bf Automatic New Word Detection}\> \>Sogou.com     \\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Devising a novel approach of New Word Detection which is based on Entropy-loss theory on Hadoop platform.
+%   The LM building on those new words improved 1\% precision in desktop IME comparatively to those on normal linguistic words.
+   \begin{tabbing}
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
+    {\bf Dependency Treelet Based Chinese-to-English SMT System} \> \>Xiamen University\\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Devising two dependency structure based statistical machine translation models. 
+%   Model 1 was completely lexicalized; we extract the treelet structure in the source language side and the continuous corresponding string of words in the target language side\\
+%   Model 2 applied the generalization to summarize the learned lexical template. Different from the before systems, we applied grammar labels to constrain the generalized template. And the Bleu score of Model 2 was apparent higher than the Model1 and at the same level with the Pharaoh.
+   \begin{tabbing}
+   \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
+    {\bf Shift-Reduced Dependency Parser} \> \>Xiamen University\\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Developing an action sequence based deterministic parser.
+   We achieved dependence arc marker accuracy rate (LAS) 76.36\% on Chinese and 82.93\% on the English on the benchmark set in CoNLL2007.
+
+
+%\section{PATENTS}
+%\emph{A Input Method In The Hardware Device}, \textbf{Jianfeng Jia}, Yanfeng Wang, Yang Zhang, CN102087550A public on Jun.8, 2011\\
+%\emph{A Method And A System Providing New Words And Hot Words}, \textbf{Jianfeng Jia}, Yang Zhang, Yanfeng Wang, CN102163198A, public on Aug.24, 2011 \\
+
+
+
 \section{HONORS AND AWARDS}             
 %    \begin{itemize}
      Rhinoceroses prize for building the trigram and re-rank model for cloud IME, Sogou Research, 2010 \\
@@ -73,43 +121,5 @@
      \textbf{Jianfeng Jia}, Xiaodong Shi, Yu Chen, \emph{Shift-Reduce Algorithm and Structure Model Based Dependency Statistical Parser}, International Chinese Computing Conference (ICCC) 2007, Wuhan, China.
 %\end{itemize}
 
-%\section{PATENTS}
-%\emph{A Input Method In The Hardware Device}, \textbf{Jianfeng Jia}, Yanfeng Wang, Yang Zhang, CN102087550A public on Jun.8, 2011\\
-%\emph{A Method And A System Providing New Words And Hot Words}, \textbf{Jianfeng Jia}, Yang Zhang, Yanfeng Wang, CN102163198A, public on Aug.24, 2011 \\
-
-\section{SELECTED PROJECTS}
-   \vspace{-0.1in}	
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Feedback Data flow System of IME using HBase and Pig}\> \>Sogou.com     \\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Building the automatic feedback data processing system on top of HBase. Using Pig to analyze the global user behavior and also keeping track of single user's daily precision. \\
-   Through this analyse tool, we found some certain flaw of the product and provided the solution to improve the precision.
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Big Language Model for Cloud IME} \> \>Sogou.com     \\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Building the automatic process of LM updating weekly from the new corpus using Hadoop platform. \\
-   Building the decoder for trigram LM and the re-rank process to improve the precision of 1\%, which is 3\% higher than competitors' products.
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Automatic New Word Detection}\> \>Sogou.com     \\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Devising a novel approach of New Word Detection which is based on Entropy-loss theory.\\
-   The LM building on those new words improved 1\% precision in desktop IME comparatively to those on normal linguistic words.
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Dependency Treelet Based Chinese-to-English SMT System} \> \>Xiamen University\\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Devising two dependency structure based statistical machine translation models. \\
-   Model 1 was completely lexicalized; we extract the treelet structure in the source language side and the continuous corresponding string of words in the target language side\\
-   Model 2 applied the generalization to summarize the learned lexical template. Different from the before systems, we applied grammar labels to constrain the generalized template. And the Bleu score of Model 2 was apparent higher than the Model1 and at the same level with the Pharaoh.
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Shift-Reduced Dependency Parser} \> \>Xiamen University\\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Developing an action sequence based deterministic parser.\\
-   We achieved dependence arc marker accuracy rate (LAS) 76.36\% on Chinese and 82.93\% on the English on the benchmark set in CoNLL2007.
 \end{resume}
-
 \end{document}
