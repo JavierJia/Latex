@@ -8,8 +8,8 @@
 %\usepackage{setspace}
 %\singlespacing
 %\onehalfspacing
-\usepackage{fullpage}
-\usepackage[top=1in, bottom=1in, left=0.8in, right=1in]{geometry}
+%\usepackage{fullpage}
+\usepackage[top=1in, bottom=1in, left=0.6in, right=1in]{geometry}
 
 \begin{document} 
 
@@ -28,7 +28,7 @@
    \vspace{-0.1in}	
    \begin{tabbing}
    \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
-    {\bf Associate Researcher} \>Sogou.com     \>Jul.2008- Jul.2012\\
+    {\bf Research Associate} \>Sogou.com     \>Jul.2008- Jul.2012\\
                              \>Beijing, China
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
    Working at \emph{Chinese Input Method Editor} (IME) Research Group,
@@ -70,20 +70,21 @@
    \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Feedback Data flow System of IME using HBase and Pig}\> \>Sogou.com     \\
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Building the automatic feedback data processing system on top of HBase. Using Pig to analyze the global user behavior and also keeping track of single user's daily precision. 
+   Building the automatic feedback data processing system using HBase to store 30G data per day, 15T data totally. Using Pig to analyze and explore the global user behavior and also keeping track of single user's daily statistical features. 
 %   Through this analyse tool, we found some certain flaw of the product and provided the solution to improve the precision.
    \begin{tabbing}
    \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Large-scale Language Model for Cloud IME} \> \>Sogou.com     \\
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-%   Building the automatic process of LM updating weekly from the new corpus using Hadoop platform. \\
-   Building the decoder for trigram LM and the re-rank model to improve the precision of 1\%, which is 3\% higher than competitors' products.
+   Building the automatic process of LM updating weekly from the 500G new corpus using Hadoop platform. \\
+   Building the decoder for trigram LM and the re-rank model to improve the precision, which is 3\% higher than competitors' products.
    \begin{tabbing}
    \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Automatic New Word Detection}\> \>Sogou.com     \\
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Devising a novel approach of New Word Detection which is based on Entropy-loss theory on Hadoop platform.
-%   The LM building on those new words improved 1\% precision in desktop IME comparatively to those on normal linguistic words.
+   Devising a novel approach of New Word Detection which is based on Entropy-loss theory on Hadoop platform.\\
+   This system do not need any Linguistics dictionary, fully base on the statistical information of corpus itself.
+   The LM building on those new words improved 1\% precision in desktop IME comparatively to those on normal linguistic words.
    \begin{tabbing}
    \hspace{2.5in}\= \hspace{3in}\= \kill % set up two tab positions
     {\bf Dependency Treelet Based Chinese-to-English SMT System} \> \>Xiamen University\\
